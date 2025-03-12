@@ -27,6 +27,19 @@
 
 Необходимо предоставить файл конфигурации в формате, следующем представленному в примере ``.env.sample``
 
+```bash
+LOCATION_DATA_ENDPOINT_URL=http://host.docker.internal:8080/indexes  # URL эндпоинта API
+AUTH_LOGIN=admin  # Логин Basic Auth
+AUTH_PASSWORD=admin  # Пароль Basic Auth
+SCHEDULE=* * * * *  # Расписание в формате cron
+
+POSTGRES_USER=postgres  # Имя пользователя postgres
+POSTGRES_PASSWORD=root  # Пароль
+POSTGRES_HOST=host.docker.internal  # Хост
+POSTGRES_PORT=5432  # Порт
+POSTGRES_DB=location_data_db  # Имя базы данных
+```
+
 ### Сборка образа
 
 ```bash
